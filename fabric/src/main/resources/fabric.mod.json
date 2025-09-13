@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "sources": "https://github.com/Hajsori/SimpleMacro",
+    "discord": "https://discord.gg/jNxD65JBCv"
+  },
+  "license": "${license}",
+  "icon": "assets/simplemacro/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.hajsori.simplemacro.SimpleMacro"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=${java_version}",
+    "voicechat": ">=${minecraft_version}-${svc_version}"
+  }
+}
