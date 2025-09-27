@@ -22,7 +22,7 @@ dependencies {
     compileOnly group: "io.github.llamalad7", name: "mixinextras-common", version: "0.3.5"
     annotationProcessor group: "io.github.llamalad7", name: "mixinextras-common", version: "0.3.5"
 
-    implementation "org.java-websocket:Java-WebSocket:1.5.3"
+    implementation "org.java-websocket:Java-WebSocket:${websocket_version}"
 
     // Simple Voice Chat
     implementation "maven.modrinth:simple-voice-chat:neoforge-${minecraft_version}-${svc_version}"

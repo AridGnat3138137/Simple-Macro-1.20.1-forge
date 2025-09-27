@@ -57,6 +57,6 @@ dependencies {
     implementation "maven.modrinth:simple-voice-chat:neoforge-${minecraft_version}-${svc_version}"
 
     // WebSocket
-    jarJar(implementation("org.java-websocket:Java-WebSocket:1.5.3"))
-    additionalRuntimeClasspath "org.java-websocket:Java-WebSocket:1.5.3"
+    jarJar(implementation("org.java-websocket:Java-WebSocket:${websocket_version}"))
+    additionalRuntimeClasspath "org.java-websocket:Java-WebSocket:${websocket_version}"
 }

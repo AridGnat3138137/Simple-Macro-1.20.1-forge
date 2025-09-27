@@ -11,8 +11,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
 
     // WebSocket
-    implementation "org.java-websocket:Java-WebSocket:1.5.3"
-    include "org.java-websocket:Java-WebSocket:1.5.3"
+    implementation "org.java-websocket:Java-WebSocket:${websocket_version}"
+    include "org.java-websocket:Java-WebSocket:${websocket_version}"
 
     // Simple Voice Chat
     modImplementation "maven.modrinth:simple-voice-chat:fabric-${minecraft_version}-${svc_version}"
