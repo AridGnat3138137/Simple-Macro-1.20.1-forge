@@ -77,7 +77,7 @@ dependencies {
     }
 
     // Simple Voice Chat
-    implementation "maven.modrinth:simple-voice-chat:forge-${minecraft_version}-${svc_version}"
+    implementation "maven.modrinth:simple-voice-chat:forge-${svc_version}"
 }
 
 publishing {
