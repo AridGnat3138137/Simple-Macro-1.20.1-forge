@@ -4,7 +4,9 @@
   "package": "xyz.hajsori.simplemacro.mixin",
   "refmap": "simplemacro.refmap.json",
   "compatibilityLevel": "JAVA_18",
-  "mixins": [],
+  "mixins": [
+    "PTTKeyHandlerMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {
