@@ -3,18 +3,24 @@ plugins {
     id "net.neoforged.moddev"
 }
 
-neoForge {
-    neoFormVersion = neo_form_version
-    // Automatically enable AccessTransformers if the file exists
-    def at = file("src/main/resources/META-INF/accesstransformer.cfg")
-    if (at.exists()) {
-        accessTransformers.from at.absolutePath
-    }
-    parchment {
-        minecraftVersion = parchment_minecraft
-        mappingsVersion = parchment_version
-    }
-}
+// neoForge configuration is not required for a Forge-only build and
+// can cause dependency resolution failures when a matching neoform
+// artifact is not available for the target version. Commenting it out
+// for now to allow the Forge build to proceed. Re-enable if you need
+// neoForge-specific features or run the NeoForge subproject.
+//
+// neoForge {
+//    neoFormVersion = neo_form_version
+//    // Automatically enable AccessTransformers if the file exists
+//    def at = file("src/main/resources/META-INF/accesstransformer.cfg")
+//    if (at.exists()) {
+//        accessTransformers.from at.absolutePath
+//    }
+//    parchment {
+//        minecraftVersion = parchment_minecraft
+//        mappingsVersion = parchment_version
+//    }
+//}
 
 dependencies {
     compileOnly group: "org.spongepowered", name: "mixin", version: "0.8.5"
