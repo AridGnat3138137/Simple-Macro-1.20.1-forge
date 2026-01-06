@@ -6,7 +6,8 @@ dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings loom.layered {
         officialMojangMappings()
-        parchment("org.parchmentmc.data:parchment-${parchment_minecraft}:${parchment_version}@zip")
+        // parchment layer disabled for Forge-only build; re-enable if building Fabric
+        // parchment("org.parchmentmc.data:parchment-${parchment_minecraft}:${parchment_version}@zip")
     }
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
 
